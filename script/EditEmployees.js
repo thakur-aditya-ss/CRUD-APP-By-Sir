@@ -19,7 +19,7 @@ const zipcodeEle = document.getElementById("zipcode");
 async function getEditEmployees (){
 
     try{
-        let resp = await fetch(`http://localhost:5000/employees/${id}`);
+        let resp = await fetch(`https://crud-app-zs6f.onrender.com/${id}`);
         let data = await resp.json();
         console.log(data); 
         // PRE-FILL INPUT FILL
@@ -73,7 +73,7 @@ employeeFormEle.addEventListener("submit",async (e) => {
 };
 
 try{
-    let resp = await fetch(`http://localhost:5000/employees/${id}`,{
+    let resp = await fetch(`https://crud-app-zs6f.onrender.com/${id}`,{
     method: "PUT",
     header : {
     "Content-Type": "application/json", 
