@@ -40,7 +40,7 @@ let newEmployeeData ={
    },
 };
 try {
-let resp = await fetch("https://crud-app-zs6f.onrender.com",{
+let resp = await fetch("https://crud-app-zs6f.onrender.com/employees/",{
     method : "POST",
     hearders: {
         "Content-Type" : "application/json",
